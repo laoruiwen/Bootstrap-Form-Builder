@@ -18,6 +18,7 @@ define([
   , _PopoverCheckbox
   , _snippetTemplates
 ){
+  //属性编辑弹出框
   return Backbone.View.extend({
     tagName: "div"
     , className: "component" 

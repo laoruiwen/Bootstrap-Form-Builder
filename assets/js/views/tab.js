@@ -4,6 +4,7 @@ define([
 
 ], function($, _, Backbone,
            _tabNavTemplate){
+  //tab切换
   return Backbone.View.extend({
     tagName: "div"
     , className: "tab-pane"
@@ -27,6 +28,7 @@ define([
       // Render tab
       this.$el.attr("id", this.id);
       this.$el.appendTo(".tab-content");
+      //再次绑定事件
       this.delegateEvents();
     }
   });

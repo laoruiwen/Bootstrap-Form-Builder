@@ -1,6 +1,7 @@
 define([
       'jquery', 'underscore', 'backbone'
 ], function($, _, Backbone) {
+  //对数据的一些操作
   return Backbone.Model.extend({
     initialize: function() {
       this.set("fresh", true);
